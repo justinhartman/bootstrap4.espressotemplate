@@ -1,0 +1,19 @@
+.browserupgrade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    z-index: 1500;
+    background-color: #f25648;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 50px;
+}
+
+.browserupgrade a {
+    color: #ffffff;
+    text-decoration: underline;
+}

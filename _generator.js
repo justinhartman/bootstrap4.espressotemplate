@@ -37,6 +37,12 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
         ]);
 	}
 
+    if (!config.ieTags) {
+        excludePaths = excludePaths.concat([
+            'css/browser-upgrade.css'
+        ]);
+    }
+
 	excludePaths.forEach(function(excludePath) {
 		var currentNode = null;
 
