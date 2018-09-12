@@ -12,34 +12,29 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <!-- @stylesheet main -->
-  <!-- @stylesheet normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-<!-- @if @ieTags -->
   <!--[if lte IE 9]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-<!-- @end if -->
 
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
-
-  <!-- @if @modernizr --><!-- @javascript modernizr --><!-- @end if -->
-  <!-- @if @html5shiv --><!-- @javascript html5shiv --><!-- @end if -->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <!-- @javascript plugins -->
-  <!-- @javascript main -->
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
-<!-- @if @googleAnalytics -->
-  <!-- @if @googleAnalyticsSiteID --><!-- Google Analytics --><!-- @else --><!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. --><!-- @end if-->
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', '<!-- @googleAnalyticsSiteID | UA-XXXXX-X -->', 'auto'); ga('send', 'pageview')
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-<!-- @end if -->
 </body>
+
 </html>
