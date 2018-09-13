@@ -69,8 +69,12 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
     	addVendorScript(vendorScriptMap.jquery);
     }
 
-	if (config.base === 'starter' || config.base === 'jumbotron') {
+	if (config.base === 'starter' || config.base === 'jumbotron' || config.base === 'album') {
 		addVendorScript(vendorScriptMap.popper);
+	}
+
+    if (config.base === 'album') {
+		addVendorScript(vendorScriptMap.holder);
 	}
 
 	// Add template styles
