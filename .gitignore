@@ -25,6 +25,7 @@
 ########################
 # Add any files or folders below that you would like ignored.
 bootstrap/examples/
+tests/
 
 
 ######################

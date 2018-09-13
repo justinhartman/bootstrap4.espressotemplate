@@ -64,8 +64,10 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 		}
 	};
 
-    addVendorScript(vendorScriptMap.bootstrap);
-	addVendorScript(vendorScriptMap.jquery);
+    if (config.base !== 'grid') {
+        addVendorScript(vendorScriptMap.bootstrap);
+    	addVendorScript(vendorScriptMap.jquery);
+    }
 
 	if (config.base === 'starter' || config.base === 'jumbotron') {
 		addVendorScript(vendorScriptMap.popper);
