@@ -69,7 +69,7 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
     	addVendorScript(vendorScriptMap.jquery);
     }
 
-	if (config.base === 'starter' || config.base === 'jumbotron' || config.base === 'album' || config.base === 'pricing' || config.base === 'checkout' || config.base === 'product' || config.base === 'cover' || config.base === 'carousel' || config.base === 'blog') {
+	if (config.base === 'starter' || config.base === 'jumbotron' || config.base === 'album' || config.base === 'pricing' || config.base === 'checkout' || config.base === 'product' || config.base === 'cover' || config.base === 'carousel' || config.base === 'blog' || config.base === 'dashboard') {
 		addVendorScript(vendorScriptMap.popper);
 	}
 
