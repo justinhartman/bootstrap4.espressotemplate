@@ -50,7 +50,9 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 
 	// Add common files from the Bootstrap folder.
 	var boilerplateInputNode  = inputFolderNode.folderForPath('bootstrap');
-	var boilerplateOutputNode = outputFolderNode.addFolderAtPath(boilerplateInputNode, './', OverwriteOnConflict);
+	var boilerplateOutputNode = outputFolderNode.addFolderAtPath(
+        boilerplateInputNode, './', OverwriteOnConflict
+    );
 
     var excludePaths = [
         'examples/',
@@ -89,8 +91,14 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 	// Add vendor script libraries
 	function addVendorScript(vendorFileName) {
 		if (vendorFileName) {
-			var vendorInputFile = inputFolderNode.fileForPath('vendor-scripts/' + vendorFileName);
-			outputFolderNode.addFileAtPath(vendorInputFile, 'js/vendor/' + vendorFileName, OverwriteOnConflict);
+			var vendorInputFile = inputFolderNode.fileForPath(
+                'vendor-scripts/' + vendorFileName
+            );
+			outputFolderNode.addFileAtPath(
+                vendorInputFile,
+                'js/vendor/' + vendorFileName,
+                OverwriteOnConflict
+            );
 		}
 	};
 
@@ -112,7 +120,9 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 	}
 
 	// Add template styles
-	var styleInputFolderNode = inputFolderNode.folderForPath('templates/' + config.base);
+	var styleInputFolderNode = inputFolderNode.folderForPath(
+        'templates/' + config.base
+    );
 
 	if (styleInputFolderNode !== null) {
 		for (var i = 0, styleChildNodes = styleInputFolderNode.childNodes; i < styleChildNodes.length; i++) {
@@ -140,7 +150,9 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 		}
 
 		if (config.ga_siteId) {
-			boilerplateIndexNode.assignVariable('googleAnalyticsSiteID', config.ga_siteId);
+			boilerplateIndexNode.assignVariable(
+                'googleAnalyticsSiteID', config.ga_siteId
+            );
 		}
 	}
 
