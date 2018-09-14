@@ -1,34 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <title>Sticky Footer Template for Bootstrap</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
-    <title>Sticky Footer Template for Bootstrap</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json"> <!-- For Android Devices -->
+    <meta name="msapplication-config" content="browserconfig.xml"> <!-- For Windows and Microsoft Mobile -->
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- For Apple iOS -->
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#563d7c"> <!-- For Safari -->
+    <!-- @if @ieTags -->
+    <!-- @stylesheet browser-upgrade -->
+    <!-- @end if -->
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- @stylesheet bootstrap.min -->
+
+    <!-- Add custom styles here -->
+    <!-- @stylesheet styles -->
 
     <!-- Custom styles for this template -->
-    <link href="sticky-footer.css" rel="stylesheet">
-  </head>
+    <!-- @stylesheet sticky-footer -->
+</head>
 
-  <body>
-
+<body>
+<!-- @if @ieTags -->
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+<!-- @end if -->
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5">Sticky footer</h1>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
-      <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
+        <h1 class="mt-5">Sticky footer</h1>
+        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+        <p>Use the sticky footer with a fixed navbar if need be, too.</p>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
-      </div>
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>

@@ -53,7 +53,8 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
     // Bootstrap scripts.
     var excludeScripts = [
         'grid',
-        'signin'
+        'signin',
+        'sticky'
     ];
 
     // An array of templates that get the Popper.js script.
