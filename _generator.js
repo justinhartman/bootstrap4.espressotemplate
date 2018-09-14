@@ -72,7 +72,8 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
         'stickynav',
         'navbars',
         'navbarstatic',
-        'navbarfixed'
+        'navbarfixed',
+        'navbarbottom'
     ];
 
     // An array of templates that get the Holder script.
