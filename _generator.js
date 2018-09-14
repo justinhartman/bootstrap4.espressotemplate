@@ -68,7 +68,8 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
         'cover',
         'carousel',
         'blog',
-        'dashboard'
+        'dashboard',
+        'stickynav'
     ];
 
     // An array of templates that get the Holder script.

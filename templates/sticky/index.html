@@ -45,6 +45,14 @@
             <span class="text-muted">Place sticky footer content here.</span>
         </div>
     </footer>
+<!-- @if @googleAnalytics -->
+    <!-- @if @googleAnalyticsSiteID --><!-- Google Analytics --><!-- @else --><!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. --><!-- @end if-->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', '<!-- @googleAnalyticsSiteID | UA-XXXXX-X -->', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<!-- @end if -->
 </body>
 
 </html>

@@ -2,22 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json"> <!-- For Android Devices -->
+    <meta name="msapplication-config" content="browserconfig.xml"> <!-- For Windows and Microsoft Mobile -->
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- For Apple iOS -->
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#563d7c"> <!-- For Safari -->
+<!-- @if @ieTags -->
+    <!-- @stylesheet browser-upgrade -->
+<!-- @end if -->
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- @stylesheet bootstrap.min -->
+
+    <!-- Add custom styles here -->
+    <!-- @stylesheet styles -->
 
     <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <!-- @stylesheet sticky-footer-navbar -->
   </head>
 
   <body>
-
+<!-- @if @ieTags -->
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+<!-- @end if -->
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -49,7 +63,7 @@
     <main role="main" class="container">
       <h1 class="mt-5">Sticky footer with fixed navbar</h1>
       <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+      <p>Back to <a href="#">the default sticky footer</a> minus the navbar.</p>
     </main>
 
     <footer class="footer">
@@ -62,8 +76,18 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <!-- @javascript popper -->
+    <!-- @javascript bootstrap -->
+<!-- @if @googleAnalytics -->
+    <!-- @if @googleAnalyticsSiteID --><!-- Google Analytics --><!-- @else --><!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. --><!-- @end if-->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', '<!-- @googleAnalyticsSiteID | UA-XXXXX-X -->', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<!-- @end if -->
   </body>
 </html>
