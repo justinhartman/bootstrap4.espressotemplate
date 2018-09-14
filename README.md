@@ -16,6 +16,7 @@ project development by providing templates, code, CSS and scripts using the
     - [Experiments](#experiments)
   - [Theme Options](#theme-options)
   - [Extras](#extras)
+  - [Favicons](#favicons)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installing](#installing)
@@ -132,6 +133,55 @@ These extras are:
    option of inputting your Site ID at time of creating your template or, if you
    only create the GA tag later on, you can add the Site ID to the markup later
    on. If this option is unticked, no additional code is added to your markup.
+
+### Favicons
+
+Each Bootstrap template that is generated from the Boilerplate Kit contains a
+series of favicons that you can customise and use in your projects.
+
+In the HTML markup for each template you will see these meta-tags:
+
+```html
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="manifest.json"> <!-- For Android Devices -->
+<meta name="msapplication-config" content="browserconfig.xml"> <!-- For Windows and Microsoft Mobile -->
+<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- For Apple iOS -->
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#563d7c"> <!-- For Safari -->
+```
+
+The following breaks down what each of the meta-tags provide.
+
+- `favicon.ico` is the first meta-tag and sits in the root of your project
+  folder. The `favicon.ico` is a compiled icon image made of 16x16, 32x32 and,
+  in some cases, 64x64 pixel images. If you don't know how to generate a
+  `favicon.ico` have a [look at this resource][favicon].
+- `manifest.json` is used by Android devices and sits in your root folder. This
+  json file contains the path to the various Android-specific favicon files.
+  These files are locate in `/img/favicons/` and are labelled
+  `android-chrome-192x192.png` and `android-chrome-512x512.png`. These are the
+  default sizes required for most Android devices.
+- `browserconfig.xml` is similar to the Android `manifest.json` but this file is
+  specific to Windows and Microsoft devices. The `browserconfig.xml` contains
+  links to Microsoft-specific favicon files. These files are located in
+  `/img/favicons/` and are prefixed with `mstile-*` and then the file sizes.
+  Each of these files cover an array of Windows and Mobile device sizes.
+- `apple-touch-icon` is a link to the favicon used for iOS devices. There is
+  only one size image for iOS devices as this is all you really need to provide
+  but some developers choose to add more icons to cater for specific iOS
+  devices. You don't need to add more but feel free to add more if you want.
+- `safari-pinned-tab.svg` is a link to a SVG file which is used by Safari on
+  macOS and iOS. This is a transparent, single-colour SVG which is styled by the
+  `color="#563d7c"` class in the meta-tag. This favicon is used when people add
+  your website to their favourites and/or bookmarks and appears under the
+  favourite sites in Safari.
+
+**VERY IMPORTANT:** The files contained in `/img/favicons/` are all Bootstrap
+favicons and you will need to redesign each of the images and SVG files in this
+directory (or delete what you aren't going to use in your markup). You will also
+need to update the `<TileColor>` contained in the `browserconfig.xml` file as
+well as the `theme_color` and `background_color` in the `manifest.json` to your
+website's primary colour used. The colours are all Bootstrap specific colours
+and need changing.
 
 ## Getting Started
 
@@ -252,3 +302,4 @@ Special thanks go out to the following people and projects.
 [popper]: https://popper.js.org
 [holder]: http://holderjs.com
 [humans]: http://humanstxt.org/
+[favicon]: https://realfavicongenerator.net/
