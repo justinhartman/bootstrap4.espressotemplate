@@ -49,6 +49,37 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
         ]);
     }
 
+    // An array of templates that are excluded from getting jQuery and
+    // Bootstrap scripts.
+    var excludeScripts = [
+        'grid',
+        'signin'
+    ];
+
+    // An array of templates that get the Popper.js script.
+    var includePopper = [
+        'starter',
+        'jumbotron',
+        'album',
+        'pricing',
+        'checkout',
+        'product',
+        'cover',
+        'carousel',
+        'blog',
+        'dashboard'
+    ];
+
+    // An array of templates that get the Holder script.
+    var includeHolder = [
+        'album',
+        'pricing',
+        'checkout',
+        'product',
+        'carousel',
+        'blog'
+    ];
+
     // forEach loop on the excluded paths and files.
 	excludePaths.forEach(function(excludePath) {
 		var currentNode = null;
@@ -75,37 +106,6 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
             );
 		}
 	};
-
-    // An array of templates that get the Popper.js script.
-    var includePopper = [
-        'starter',
-        'jumbotron',
-        'album',
-        'pricing',
-        'checkout',
-        'product',
-        'cover',
-        'carousel',
-        'blog',
-        'dashboard'
-    ];
-
-    // An array of templates that get the Holder script.
-    var includeHolder = [
-        'album',
-        'pricing',
-        'checkout',
-        'product',
-        'carousel',
-        'blog'
-    ];
-
-    // An array of templates that are excluded from getting jQuery and
-    // Bootstrap scripts.
-    var excludeScripts = [
-        'grid',
-        'signin'
-    ];
 
     // Add jQuery and Bootstrap to templates that are not in the excludeScripts
     // array.
