@@ -17,6 +17,13 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 	config.ga              = !!config.ga;
 	config.ga_siteId       = config.ga ? config.ga_siteId || '' : undefined;
 
+    // An array of templates that are excluded from getting jQuery and
+    // Bootstrap scripts.
+    var excludeScripts = [
+        'grid',
+        'signin'
+    ];
+
     // An array of templates that get the Popper.js script.
     var includePopper = [
         'starter',
@@ -39,13 +46,6 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
         'product',
         'carousel',
         'blog'
-    ];
-
-    // An array of templates that are excluded from getting jQuery and Bootstrap
-    // scripts.
-    var excludeScripts = [
-        'grid',
-        'signin'
     ];
 
 	// Add common files from the Bootstrap folder.
