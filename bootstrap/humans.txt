@@ -21,7 +21,7 @@
 
     Last update: YYYY/MM/DD
     Language: English / Dutch / etc.
-	Doctype: HTML5
+    Doctype: HTML5
     Standards: HTML5, CSS3
     Components: Bootstrap, jQuery, Popper.js, Holder.js, Apache Server Configs
     Software: Espresso, GitHub
