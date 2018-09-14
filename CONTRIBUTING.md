@@ -30,5 +30,5 @@ Thanks for contributing! :heart:
 
 [//]: # (Change the URL's below to your own project information)
 
-[issues]: https://github.com/justinhartman/H5BP.espressotemplate/issues
-[new-issue]: https://github.com/justinhartman/H5BP.espressotemplate/issues/new/choose
+[issues]: https://github.com/justinhartman/bootstrap4.espressotemplate/issues
+[new-issue]: https://github.com/justinhartman/bootstrap4.espressotemplate/issues/new/choose

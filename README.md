@@ -1,19 +1,21 @@
-# HTML5 Boilerplate Template for Espresso
+# Bootstrap 4 Boilerplate Kit for Espresso
 
-The un-official H5BP website boilerplate template for Espresso (espressoapp.com)
-, the macOS Editor App.
-
-**_[Espresso][espressoapp] are the original authors of this template, I have
-simply taken what they have provided in the application already and upgraded it
-to use all of the latest projects. I found the bundled version was too outdated
-and needed upgrading/maintaining._**
+A Boilerplate Template Kit for [Espresso][espressoapp] that speeds up your
+project development by providing templates, code, CSS and scripts using the
+[Bootstrap 4.1.3][bootstrap] framework.
 
 ###### Table of Contents
 
 - [What is Included](#what-is-included)
-    - [Vendor Scripts](#vendor-scripts)
-    - [Theme Templates](#theme-templates)
-    - [Theme Options](#theme-options)
+  - [Bootstrap 4.1.3](#bootstrap-413)
+  - [Vendor Scripts](#vendor-scripts)
+  - [Theme Templates](#theme-templates)
+    - [Framework](#framework)
+    - [Custom Components](#custom-components)
+    - [Navbars](#navbars)
+    - [Experiments](#experiments)
+  - [Theme Options](#theme-options)
+  - [Extras](#extras)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installing](#installing)
@@ -29,31 +31,72 @@ and needed upgrading/maintaining._**
 
 ## What is Included
 
-The following come included in this template for `Espresso`.
+This Boilerplate Kit's primary objective is to accelerate your development
+process by providing you with all the files and code needed for working with the
+most current release of [Bootstrap][bootstrap] - currently version 4.1.3. Not
+only does this Kit include all the Bootstrap CSS and JS, `jQuery`, `Popper.js`
+and `Holder.js` scripts, but it also includes 20 fully-functional example
+templates that you can fire up and begin using as a base for your project.
+
+Here is what is included in this Boilerplate Kit for `Espresso`.
+
+### Bootstrap 4.1.3
+
+You get the latest, minified CSS and JavaScript files for Bootstrap 4.1.3.
+These are:
+
+- bootstrap.min.css
+- bootstrap.min.css.map
+- bootstrap.min.js
 
 ### Vendor Scripts
 
-The following vendor scripts are included in the template and have all been
-upgraded from their original versions.
+The following vendor scripts are included in the template.
 
-1. [Bootstrap 3.3.7][bootstrap] - from version 3.1.1
-2. [jQuery 3.3.1][jquery] - from version 1.11.0
-3. [Modernizr 3.6.0][modernizr] - from version 2.6.2
-4. [Respond.js 1.4.2][respond] - from version 1.1.0
-5. [html5shiv 3.7.3][html5shiv] - from version 3.6
+1. [Bootstrap 4.1.3][bootstrap]
+1. [jQuery Slim 3.3.1][jquery]
+1. [Popper 3.6.0][popper]
+1. [Holder.js 2.9.4+cabil][holder]
 
 ### Theme Templates
 
-H5BP website boilerplate template for Espresso has also been upgrade from
-version 4.6.0 to version 6.1.0. The template includes the following three
-variations:
+The Bootstrap 4 Boilerplate Kit template for Espresso includes the following 20
+template variations ranging from using parts of the framework to custom
+components and layouts as well as Bootstrap experiments.
 
-1. Blank HTML5 starter template with only jQuery included.
-2. Responsive starter template with jQuery and Respond.js.
-3. Bootstrap Jumbotron template with jQuery and Respond.js.
+Here is an overview (with screenshots) of each of the included templates in the
+Boilerplate Kit.
 
-You have the choice of either `Modernizr` or `html5shiv` as the HTML5 fallback
-with each of the three options above.
+#### Framework
+
+| Screenshot                                        | Template                                                                             | Screenshot                         | Template                                                                            |
+|:--------------------------------------------------|:-------------------------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------------------------------|
+| ![Starter](docs/screenshots/starter-template.png) | **Starter:** Nothing but the basics: compiled CSS and JavaScript and navbar.         | ![Grid](docs/screenshots/grid.png) | **Grid:** Multiple examples of grid layouts with all four tiers, nesting, and more. |
+| ![Jumbotron](docs/screenshots/jumbotron.png)      | **Jumbotron:** Build around the jumbotron with a navbar and some basic grid columns. |                                    |                                                                                     |
+
+#### Custom Components
+
+| Screenshot                                                         | Template                                                                                         | Screenshot                                           | Template                                                                                     |
+|:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|:-----------------------------------------------------|:---------------------------------------------------------------------------------------------|
+| ![Album](docs/screenshots/album.png)                               | **Album:** Simple one-page template for photo galleries, portfolios, and more.                   | ![Pricing](docs/screenshots/pricing.png)             | **Pricing:** Example pricing page built with Cards and featuring a custom header and footer. |
+| ![Checkout](docs/screenshots/checkout.png)                         | **Checkout:** Custom checkout form showing our form components and their validation features.    | ![Product](docs/screenshots/product.png)             | **Product:** Lean product-focused marketing page with extensive grid and image work.         |
+| ![Cover](docs/screenshots/cover.png)                               | **Cover:** A one-page template for building simple and beautiful home pages.                     | ![Carousel](docs/screenshots/carousel.png)           | **Carousel:** Customize the navbar and carousel, then add some new components.               |
+| ![Blog](docs/screenshots/blog.png)                                 | **Blog:** Magazine like blog template with header, navigation, featured content.                 | ![Dashboard](docs/screenshots/dashboard.png)         | **Dashboard:** Basic admin dashboard shell with fixed sidebar and navbar.                    |
+| ![Sign-in](docs/screenshots/sign-in.png)                           | **Sign-in:** Custom form layout and design for a simple sign in form.                            | ![Sticky Footer](docs/screenshots/sticky-footer.png) | **Sticky Footer:** Attach a footer to the bottom of the viewport when page content is short. |
+| ![Sticky Footer Navbar](docs/screenshots/sticky-footer-navbar.png) | **Sticky Footer Navbar:** Attach a footer to the bottom of the viewport with a fixed top navbar. |                                                      |                                                                                              |
+
+#### Navbars
+
+| Screenshot                                         | Template                                                                                            | Screenshot                                           | Template                                                                                            |
+|:---------------------------------------------------|:----------------------------------------------------------------------------------------------------|:-----------------------------------------------------|:----------------------------------------------------------------------------------------------------|
+| ![Navbars](docs/screenshots/navbars.png)           | **Navbars:** Demonstration of all responsive and container options for the navbar.                  | ![Navbar Static](docs/screenshots/navbar-static.png) | **Navbar Static:** Single navbar example of a static top navbar along with some additional content. |
+| ![Navbar Fixed](docs/screenshots/navbar-fixed.png) | **Navbar Fixed:** Single navbar example with a fixed top navbar along with some additional content. | ![Navbar Bottom](docs/screenshots/navbar-bottom.png) | **Navbar Bottom:** Single navbar example with a bottom navbar along with some additional content.   |
+
+#### Experiments
+
+| Screenshot                                               | Template                                                                             | Screenshot                                   | Template                                                                  |
+|:---------------------------------------------------------|:-------------------------------------------------------------------------------------|:---------------------------------------------|:--------------------------------------------------------------------------|
+| ![Floating Labels](docs/screenshots/floating-labels.png) | **Floating Labels:** Beautifully simple forms with floating labels over your inputs. | ![Offcanvas](docs/screenshots/offcanvas.png) | **Offcanvas:** Turn your expandable navbar into a sliding offcanvas menu. |
 
 ### Theme Options
 
@@ -62,9 +105,38 @@ create a _New Project_ within `Espresso`.
 
 ![Theme Options](docs/images/theme-options.png)
 
+### Extras
+
+There is an optional Extras section which allows you to include extra
+configuration files that form part of most modern-day web projects.
+
+In the `Theme Options` you will find the following settings for you to choose
+from:
+
+![Theme Options](docs/images/extras.png)
+
+These extras are:
+
+1. **IE Classes:** this includes markup in your HTML document for IE9 that will
+   display a browser upgrade message. When selecting this option a new
+   `browser-upgrade.css` file is included in your `/css/` folder and is linked
+   in your HTML markup. If you don't select this option then no additional
+   markup or CSS is added to your HTML template.
+1. **Server Extras:** includes an `.htaccess`, `robots.txt` and `humans.txt`
+   file in the root of your project folder. You can edit these files and
+   customise them to your needs. This option is selected by default as these
+   files are recommended but if you don't select them then none of these files
+   are added to your project.
+1. **Google Analytics:** by including this, additional Google Analytics code is
+   included in your markup just before the closing `</body>` tag. You have the
+   option of inputting your Site ID at time of creating your template or, if you
+   only create the GA tag later on, you can add the Site ID to the markup later
+   on. If this option is unticked, no additional code is added to your markup.
+
 ## Getting Started
 
-These instructions will get the H5BP template installed on your macOS machine.
+These instructions will get the Bootstrap 4 Boilerplate Kit template installed
+in `Espresso` on your `macOS` machine.
 
 ### Prerequisites
 
@@ -72,26 +144,28 @@ You will need a copy of [Espresso][espressoapp] running on `macOS`.
 
 ### Installing
 
-There are two methods to installing this template and these are documented
-below.
+There are two methods to installing the Boilerplate Template Kit and these are
+documented below.
 
 #### In Espresso
 
-- Download the template by [clicking this link][code].
+- Download the Boilerplate Template Kit by [clicking this link][code].
 - Extract the zip folder.
 - Open up your `Espresso.app` application on your machine.
 - Click `File` -> `New Project`
-   (or <kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>N</kbd>)
+  (or <kbd>Shift</kbd>+<kbd>Cmd</kbd>+<kbd>N</kbd>)
 - Click `Show Templates Folder`
 
 ![show-templates-folder](docs/images/show-templates-folder.png)
 
-- Copy the extracted folder (called `H5BP.espressotemplate`) to the `Templates`
-  directory that has just opened up.
+- Copy the extracted folder (called `bootstrap4.espressotemplate`) to the
+  `Templates` directory that has just opened up (see below).
 
 ![templates-folder](docs/images/templates-folder.png)
 
-The new template should now be available for you to use in the `Espresso` app:
+The new Boilerplate Template Kit should now be available for you to use in
+the `Espresso` app when you create a _New Project_ (see below for what you
+should be seeing).
 
 ![new template](docs/images/new-template.png)
 
@@ -103,11 +177,12 @@ The new template should now be available for you to use in the `Espresso` app:
 
 ```terminal
 $ cd ~/Library/Application\ Support/Espresso/Templates/
-$ git clone https://github.com/justinhartman/H5BP.espressotemplate.git
+$ git clone https://github.com/justinhartman/bootstrap4.espressotemplate.git
 ```
 
 You can now open up `Espresso.app` and the template will be available to you
-when you click on `New Project`.
+when you click on `File` -> `New Project` or <kbd>Shift</kbd>+<kbd>Cmd</kbd>
++<kbd>N</kbd>.
 
 ![new template](docs/images/new-template.png)
 
@@ -149,13 +224,13 @@ This project is licensed under the `MIT` License. See the
 
 Special thanks go out to the following people and projects.
 
-- [Espresso][espressoapp] - for the included template that this has been
-  upgraded from.
-- [HTML5Boilerplate][h5bp] - for providing the boilerplates in this template.
+- [Bootstrap][bootstrap] - for the libraries and example code that is used in
+  this project. Without them, this project wouldn't even exist.
+- [Espresso][espressoapp] - for their H5BP template that this was adapted from.
+- [humans.txt][humans] - for the `humans.txt` boilerplate file.
+- [H5BP][h5bp] - for providing the `.htaccess` file in the extras component.
 - [@justinhartman/.github][.github] - for the Github project templates.
 
-[//]: # (Make sure to change the URL links for `[tags]`, `[releases]`,)
-[//]: # (`[contribs]` and `[author-1]` below to your specific project.)
 
 [deploy]: #deployment
 [CONTRIBUTING]: CONTRIBUTING.md
@@ -163,16 +238,17 @@ Special thanks go out to the following people and projects.
 [license]: LICENSE
 [changelog]: CHANGELOG.md
 [semver]: http://semver.org
-[tags]: https://github.com/justinhartman/H5BP.espressotemplate/tags
-[releases]: https://github.com/justinhartman/H5BP.espressotemplate/releases
-[contribs]: https://github.com/justinhartman/H5BP.espressotemplate/contributors
+[tags]: https://github.com/justinhartman/bootstrap4.espressotemplate/tags
+[releases]: https://github.com/justinhartman/bootstrap4.espressotemplate/releases
+[contribs]: https://github.com/justinhartman/bootstrap4.espressotemplate/contributors
 [author-1]: https://github.com/justinhartman
 [.github]: https://github.com/justinhartman/.github
+[bootstrap]: https://getbootstrap.com
 [espressoapp]: https://espressoapp.com "Espresso, the Mac Editor."
-[code]: https://github.com/justinhartman/H5BP.espressotemplate/archive/master.zip
-[h5bp]: https://html5boilerplate.com
-[bootstrap]: https://getbootstrap.com/docs/3.3/
+[code]: https://github.com/justinhartman/bootstrap4.espressotemplate/archive/master.zip
+[h5bp]: https://github.com/h5bp/server-configs-apache
+[bootstrap]: https://getbootstrap.com/docs/4.1/
 [jquery]: https://jquery.com
-[modernizr]: https://modernizr.com
-[respond]: https://github.com/scottjehl/Respond
-[html5shiv]: https://github.com/aFarkas/html5shiv
+[popper]: https://popper.js.org
+[holder]: http://holderjs.com
+[humans]: http://humanstxt.org/
