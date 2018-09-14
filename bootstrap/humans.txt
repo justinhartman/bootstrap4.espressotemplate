@@ -1,16 +1,27 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */
 
-# TEAM
+    Your title: Your name.
+    Contact: Email, link to a contact form, etc.
+    Twitter: Your Twitter username.
+    Location: City, Country.
 
-    <name> -- <role> -- <twitter>
+/* THANKS */
 
-# THANKS
+    Their title: Their name or url
+    Contact: Email, link to their website, etc.
 
-    <name>
+    humans.txt
+    Contact: http://humanstxt.org
 
-# TECHNOLOGY COLOPHON
+    Bootstrap 4 Boilerplate: Justin Hartman
+    Contact: https://justinhartman.blog
+    Location: Cape Town, South Africa
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
-    Espresso
+/* SITE */
+
+    Last update: YYYY/MM/DD
+    Language: English / Dutch / etc.
+	Doctype: HTML5
+    Standards: HTML5, CSS3
+    Components: Bootstrap, jQuery, Popper.js, Holder.js, Apache Server Configs
+    Software: Espresso, GitHub
