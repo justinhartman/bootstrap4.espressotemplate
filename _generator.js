@@ -2,8 +2,6 @@ var vendorScriptMap = {
 	bootstrap: 				'bootstrap.min.js',
 	jquery:					'jquery-slim.min.js',
     popper:                 'popper.min.js',
-    anchor:                 'anchor.min.js',
-    clipboard:              'clipboard.min.js',
     holder:                 'holder.min.js'
 };
 
@@ -54,7 +52,8 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
     var excludeScripts = [
         'grid',
         'signin',
-        'sticky'
+        'sticky',
+        'floating'
     ];
 
     // An array of templates that get the Popper.js script.
@@ -73,7 +72,8 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
         'navbars',
         'navbarstatic',
         'navbarfixed',
-        'navbarbottom'
+        'navbarbottom',
+        'offcanvas'
     ];
 
     // An array of templates that get the Holder script.
@@ -83,7 +83,8 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
         'checkout',
         'product',
         'carousel',
-        'blog'
+        'blog',
+        'offcanvas'
     ];
 
     // forEach loop on the excluded paths and files.
