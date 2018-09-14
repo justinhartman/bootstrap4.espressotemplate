@@ -5,27 +5,58 @@ var vendorScriptMap = {
     anchor:                 'anchor.min.js',
     clipboard:              'clipboard.min.js',
     holder:                 'holder.min.js'
-
 };
 
 generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 
 	// Read config and set default values
-	var config = generator.config || {};
-	config.base = config.base || 'starter';
-	config.serverExtras = !!config.serverExtras;
-	config.ieTags = (config.ieTags === undefined) ? true : !!config.ieTags;
-	config.ga = !!config.ga;
-	config.ga_siteId = config.ga ? config.ga_siteId || '' : undefined;
+	var config             = generator.config || {};
+	config.base            = config.base || 'starter';
+	config.serverExtras    = !!config.serverExtras;
+	config.ieTags          = (config.ieTags === undefined) ? true : !!config.ieTags;
+	config.ga              = !!config.ga;
+	config.ga_siteId       = config.ga ? config.ga_siteId || '' : undefined;
 
-	// Add common files from Bootstrap folder.
-	var boilerplateInputNode = inputFolderNode.folderForPath('bootstrap');
+    // An array of templates that get the Popper.js script.
+    var includePopper = [
+        'starter',
+        'jumbotron',
+        'album',
+        'pricing',
+        'checkout',
+        'product',
+        'cover',
+        'carousel',
+        'blog',
+        'dashboard'
+    ];
+
+    // An array of templates that get the Holder script.
+    var includeHolder = [
+        'album',
+        'pricing',
+        'checkout',
+        'product',
+        'carousel',
+        'blog'
+    ];
+
+    // An array of templates that are excluded from getting jQuery and Bootstrap
+    // scripts.
+    var excludeScripts = [
+        'grid',
+        'signin'
+    ];
+
+	// Add common files from the Bootstrap folder.
+	var boilerplateInputNode  = inputFolderNode.folderForPath('bootstrap');
 	var boilerplateOutputNode = outputFolderNode.addFolderAtPath(boilerplateInputNode, './', OverwriteOnConflict);
 
     var excludePaths = [
         'examples/',
         'js/'
     ];
+
 	if (!config.serverExtras) {
 		excludePaths = excludePaths.concat([
             '.htaccess',
@@ -48,8 +79,7 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 
 		if (excludePath.slice(-1) === '/') {
 			currentNode = boilerplateInputNode.folderForPath(excludePath);
-		}
-		else {
+		} else {
 			currentNode = boilerplateInputNode.fileForPath(excludePath);
 		}
 
@@ -64,16 +94,20 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 		}
 	};
 
-    if (config.base !== 'grid') {
+    // Add jQuery and Bootstrap to templates that are not in the excludeScripts
+    // array.
+    if (!excludeScripts.includes(config.base)) {
         addVendorScript(vendorScriptMap.bootstrap);
     	addVendorScript(vendorScriptMap.jquery);
     }
 
-	if (config.base === 'starter' || config.base === 'jumbotron' || config.base === 'album' || config.base === 'pricing' || config.base === 'checkout' || config.base === 'product' || config.base === 'cover' || config.base === 'carousel' || config.base === 'blog' || config.base === 'dashboard') {
+    // Add Popper to templates that are in the includePopper array.
+	if (includePopper.includes(config.base)) {
 		addVendorScript(vendorScriptMap.popper);
 	}
 
-    if (config.base === 'album' || config.base === 'pricing' || config.base === 'checkout' || config.base === 'product' || config.base === 'carousel' || config.base === 'blog') {
+    // Add Holder to templates that are in the includeHolder array.
+	if (includeHolder.includes(config.base)) {
 		addVendorScript(vendorScriptMap.holder);
 	}
 
@@ -82,13 +116,12 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 
 	if (styleInputFolderNode !== null) {
 		for (var i = 0, styleChildNodes = styleInputFolderNode.childNodes; i < styleChildNodes.length; i++) {
-			var childNode = styleChildNodes[i];
+			var childNode     = styleChildNodes[i];
 			var childNodePath = childNode.path.split('/').slice(2).join('/');
 
 			if (childNode.type === FolderNode) {
 				outputFolderNode.addFolderAtPath(childNode, childNodePath);
-			}
-			else {
+			} else {
 				outputFolderNode.addFileAtPath(childNode, childNodePath);
 			}
 		}
@@ -98,8 +131,6 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 	var boilerplateIndexNode = outputFolderNode.fileForPath('index.html');
 
 	if (boilerplateIndexNode !== null) {
-		// boilerplateIndexNode.assignVariable(config.polyfill, 'true');
-
 		if (config.ieTags) {
 			boilerplateIndexNode.assignVariable('ieTags', true);
 		}
