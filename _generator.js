@@ -17,48 +17,19 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 	config.ga              = !!config.ga;
 	config.ga_siteId       = config.ga ? config.ga_siteId || '' : undefined;
 
-    // An array of templates that are excluded from getting jQuery and
-    // Bootstrap scripts.
-    var excludeScripts = [
-        'grid',
-        'signin'
-    ];
-
-    // An array of templates that get the Popper.js script.
-    var includePopper = [
-        'starter',
-        'jumbotron',
-        'album',
-        'pricing',
-        'checkout',
-        'product',
-        'cover',
-        'carousel',
-        'blog',
-        'dashboard'
-    ];
-
-    // An array of templates that get the Holder script.
-    var includeHolder = [
-        'album',
-        'pricing',
-        'checkout',
-        'product',
-        'carousel',
-        'blog'
-    ];
-
 	// Add common files from the Bootstrap folder.
 	var boilerplateInputNode  = inputFolderNode.folderForPath('bootstrap');
 	var boilerplateOutputNode = outputFolderNode.addFolderAtPath(
         boilerplateInputNode, './', OverwriteOnConflict
     );
 
+    // Exclude these paths when copying files over.
     var excludePaths = [
         'examples/',
         'js/'
     ];
 
+    // Exclude these files if the user doesn't select the serverExtras option.
 	if (!config.serverExtras) {
 		excludePaths = excludePaths.concat([
             '.htaccess',
@@ -70,12 +41,15 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
         ]);
 	}
 
+    // Don't copy over the browser-upgrade.css if user doesn't select the
+    // ieTags option.
     if (!config.ieTags) {
         excludePaths = excludePaths.concat([
             'css/browser-upgrade.css'
         ]);
     }
 
+    // forEach loop on the excluded paths and files.
 	excludePaths.forEach(function(excludePath) {
 		var currentNode = null;
 
@@ -88,7 +62,7 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 		boilerplateOutputNode.excludeNode(currentNode);
 	});
 
-	// Add vendor script libraries
+	// Add vendor script libraries.
 	function addVendorScript(vendorFileName) {
 		if (vendorFileName) {
 			var vendorInputFile = inputFolderNode.fileForPath(
@@ -119,7 +93,7 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 		addVendorScript(vendorScriptMap.holder);
 	}
 
-	// Add template styles
+	// Add template styles.
 	var styleInputFolderNode = inputFolderNode.folderForPath(
         'templates/' + config.base
     );
@@ -137,7 +111,7 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 		}
 	}
 
-	// Translate our configuration to the index page
+	// Translate the configuration to the index page.
 	var boilerplateIndexNode = outputFolderNode.fileForPath('index.html');
 
 	if (boilerplateIndexNode !== null) {
