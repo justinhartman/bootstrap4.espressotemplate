@@ -4,6 +4,11 @@ A Boilerplate Template Kit for [Espresso][espressoapp] that speeds up your
 project development by providing templates, code, CSS, fonts and scripts using
 the [Bootstrap 4.1.3][bootstrap] framework.
 
+_**The installation instructions, along with features, what's included and how
+to use this template, are found [by clicking on this article][blog]. This
+article contains the most up-to-date documentation for the boilerplate template
+kit.**_
+
 ###### Table of Contents
 
 - [What is Included](#what-is-included)
@@ -143,7 +148,7 @@ These extras are:
 ### Favicons
 
 Each Bootstrap template that is generated from the Boilerplate Kit contains a
-series of favicons that you can customise and use in your projects.
+range of favicons that you can customise and use in your projects.
 
 In the HTML markup for each template you will see these meta-tags:
 
@@ -290,7 +295,7 @@ Special thanks go out to the following people and projects.
 - [@justinhartman/.github][.github] - for the Github project templates.
 
 
-[deploy]: #deployment
+[blog]: https://justinhartman.blog/projects/bootstrap-4-boilerplate-template-kit-for-espresso.html?utm_source=github&utm_medium=repository&utm_campaign=bootstrap4-boilerplate&utm_content=readme-link
 [CONTRIBUTING]: CONTRIBUTING.md
 [COC]: CODE_OF_CONDUCT.md
 [license]: LICENSE
@@ -305,7 +310,6 @@ Special thanks go out to the following people and projects.
 [espressoapp]: https://espressoapp.com "Espresso, the Mac Editor."
 [code]: https://github.com/justinhartman/bootstrap4.espressotemplate/archive/master.zip
 [h5bp]: https://github.com/h5bp/server-configs-apache
-[bootstrap]: https://getbootstrap.com/docs/4.1/
 [jquery]: https://jquery.com
 [popper]: https://popper.js.org
 [holder]: http://holderjs.com
