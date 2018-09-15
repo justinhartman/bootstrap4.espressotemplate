@@ -10,8 +10,8 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 	// Read config and set default values
 	var config             = generator.config || {};
 	config.base            = config.base || 'starter';
-	config.serverExtras    = !!config.serverExtras;
-    config.fontAwesome     = !!config.fontAwesome;
+	config.serverExtras    = (config.serverExtras === undefined) ? true : !!config.serverExtras;
+    config.fontAwesome     = (config.fontAwesome === undefined) ? true : !!config.fontAwesome;
 	config.ieTags          = (config.ieTags === undefined) ? true : !!config.ieTags;
 	config.ga              = !!config.ga;
 	config.ga_siteId       = config.ga ? config.ga_siteId || '' : undefined;
@@ -162,6 +162,10 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 	var boilerplateIndexNode = outputFolderNode.fileForPath('index.html');
 
 	if (boilerplateIndexNode !== null) {
+        if (config.serverExtras) {
+            boilerplateIndexNode.assignVariable('serverExtras', true);
+        }
+
 		if (config.ieTags) {
 			boilerplateIndexNode.assignVariable('ieTags', true);
 		}
@@ -174,6 +178,10 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 			boilerplateIndexNode.assignVariable(
                 'googleAnalyticsSiteID', config.ga_siteId
             );
+		}
+
+        if (config.fontAwesome) {
+			boilerplateIndexNode.assignVariable('fontAwesome', true);
 		}
 	}
 
