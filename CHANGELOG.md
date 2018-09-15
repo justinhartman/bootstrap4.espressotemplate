@@ -3,6 +3,25 @@
 Below is a detailed change-log, along with specific tasks completed, for each
 version released to date.
 
+## Version 1.2.0 (15/09/2018)
+
+- [#enhancement](#enhancement)
+    - Added meta-tag for `humans.txt` file. Actually a bug, but it's now added.
+- [#new](#new)
+    - Added Font Awesome to all the templates.
+- [#bugfix](#bugfix)
+    - Fixed bug where Font Awesome wasn't appearing in markup.
+
+## Version 1.1.0 (15/09/2018)
+
+- [#new](#new)
+    - Added Font Awesome icon library.
+- [#bugfix](#bugfix)
+    - Fixed bug in spacing in humans.txt.
+- [#enhancement](#enhancement)
+    - Removed the Bootstrap SVG icons from the project folder. Using the raw svg
+      markup in templates.
+
 ## Version 1.0.0 (15/09/2018)
 
 - [#enhancement](#enhancement)

@@ -9,21 +9,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <link rel="manifest" href="manifest.json"> <!-- For Android Devices -->
-    <meta name="msapplication-config" content="browserconfig.xml"> <!-- For Windows and Microsoft Mobile -->
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- For Apple iOS -->
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#563d7c"> <!-- For Safari -->
-<!-- @if @ieTags -->
-    <!-- @stylesheet browser-upgrade -->
+    <link rel="manifest" href="manifest.json"> <!-- For Android Devices. -->
+    <meta name="msapplication-config" content="browserconfig.xml"> <!-- For Windows and Microsoft Mobile. -->
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- For Apple iOS. -->
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#563d7c"> <!-- For Safari. -->
+<!-- @if @serverExtras -->
+    <link rel="author" href="humans.txt" /> <!-- Link to humans.txt file. -->
 <!-- @end if -->
-
-    <!-- Bootstrap core CSS -->
-    <!-- @stylesheet bootstrap.min -->
-
-    <!-- Add custom styles here -->
-    <!-- @stylesheet styles -->
-
-    <!-- Custom styles for this template -->
+<!-- @if @ieTags -->
+    <!-- @stylesheet browser-upgrade --> <!-- Browser Upgrade Notice CSS. -->
+<!-- @end if -->
+    <!-- @stylesheet bootstrap.min --> <!-- Bootstrap core CSS. -->
+<!-- @if @fontAwesome -->
+    <!-- @stylesheet fontawesome-all.min --> <!-- Font Awesome all CSS. -->
+<!-- @end if -->
+    <!-- @stylesheet styles --> <!-- Add your custom styles here. -->
+    <!-- Custom styles for this template. -->
     <!-- @stylesheet carousel -->
 </head>
 
