@@ -278,6 +278,7 @@ Special thanks go out to the following people and projects.
   this project. Without them, this project wouldn't even exist.
 - [Espresso][espressoapp] - for their H5BP template that this was adapted from.
 - [humans.txt][humans] - for the `humans.txt` boilerplate file.
+- [robotstxt][robots] - for the `robots.txt` file.
 - [H5BP][h5bp] - for providing the `.htaccess` file in the extras component.
 - [@justinhartman/.github][.github] - for the Github project templates.
 
@@ -302,4 +303,5 @@ Special thanks go out to the following people and projects.
 [popper]: https://popper.js.org
 [holder]: http://holderjs.com
 [humans]: http://humanstxt.org/
+[robots]: http://www.robotstxt.org/
 [favicon]: https://realfavicongenerator.net/
