@@ -1,8 +1,8 @@
 # Bootstrap 4 Boilerplate Kit for Espresso
 
 A Boilerplate Template Kit for [Espresso][espressoapp] that speeds up your
-project development by providing templates, code, CSS and scripts using the
-[Bootstrap 4.1.3][bootstrap] framework.
+project development by providing templates, code, CSS, fonts and scripts using
+the [Bootstrap 4.1.3][bootstrap] framework.
 
 ###### Table of Contents
 
