@@ -11,6 +11,7 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
 	var config             = generator.config || {};
 	config.base            = config.base || 'starter';
 	config.serverExtras    = !!config.serverExtras;
+    config.fontAwesome     = !!config.fontAwesome;
 	config.ieTags          = (config.ieTags === undefined) ? true : !!config.ieTags;
 	config.ga              = !!config.ga;
 	config.ga_siteId       = config.ga ? config.ga_siteId || '' : undefined;
@@ -36,6 +37,14 @@ generator.applyToOutputNode = function(outputFolderNode, inputFolderNode) {
             '.editorconfig',
             'humans.txt',
             'robots.txt'
+        ]);
+	}
+
+    // Exclude Fontawesome if the user doesn't select the fontAwesome option.
+	if (!config.fontAwesome) {
+		excludePaths = excludePaths.concat([
+            'css/fontawesome-all.min.css',
+            'webfonts/'
         ]);
 	}
 

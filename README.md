@@ -133,6 +133,12 @@ These extras are:
    option of inputting your Site ID at time of creating your template or, if you
    only create the GA tag later on, you can add the Site ID to the markup later
    on. If this option is unticked, no additional code is added to your markup.
+1. **Font Awesome:** includes the CSS and webfonts required for using the
+   [Font Awesome][fontawesome] library in your projects. To use Font Awesome
+   just add markup to your html like this `<i class="fa fa-star"></i>` and you
+   will get a star icon loaded in your document. If you don't select this option
+   then the CSS and `/webfonts/` directory are not copied over into your
+   project.
 
 ### Favicons
 
@@ -277,6 +283,7 @@ Special thanks go out to the following people and projects.
 - [Bootstrap][bootstrap] - for the libraries and example code that is used in
   this project. Without them, this project wouldn't even exist.
 - [Espresso][espressoapp] - for their H5BP template that this was adapted from.
+- [Font Awesome][fontawesome] - the the best icon font library in the world.
 - [humans.txt][humans] - for the `humans.txt` boilerplate file.
 - [robotstxt][robots] - for the `robots.txt` file.
 - [H5BP][h5bp] - for providing the `.htaccess` file in the extras component.
@@ -305,3 +312,4 @@ Special thanks go out to the following people and projects.
 [humans]: http://humanstxt.org/
 [robots]: http://www.robotstxt.org/
 [favicon]: https://realfavicongenerator.net/
+[fontawesome]: https://fontawesome.com/
