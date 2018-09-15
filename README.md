@@ -2,7 +2,14 @@
 
 A Boilerplate Template Kit for [Espresso][espressoapp] that speeds up your
 project development by providing templates, code, CSS, fonts and scripts using
-the [Bootstrap 4.1.3][bootstrap] framework.
+the [Bootstrap][bootstrap] framework.
+
+This Boilerplate Kit's primary objective is to accelerate your development
+process by providing you with all the files and code needed for working with the
+most current release of Bootstrap - currently version 4.1.3. Not
+only does this Kit include all the Bootstrap CSS and JS, `jQuery`, `Popper.js`
+and `Holder.js` scripts, but it also includes **20 fully-functional example
+templates** that you can fire up and begin using as a base for your project.
 
 _**The installation instructions, along with features, what's included and how
 to use this template, are found [by clicking on this article][blog]. This
@@ -36,13 +43,6 @@ kit.**_
 - [Acknowledgements](#acknowledgements)
 
 ## What is Included
-
-This Boilerplate Kit's primary objective is to accelerate your development
-process by providing you with all the files and code needed for working with the
-most current release of [Bootstrap][bootstrap] - currently version 4.1.3. Not
-only does this Kit include all the Bootstrap CSS and JS, `jQuery`, `Popper.js`
-and `Holder.js` scripts, but it also includes 20 fully-functional example
-templates that you can fire up and begin using as a base for your project.
 
 Here is what is included in this Boilerplate Kit for `Espresso`.
 
