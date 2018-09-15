@@ -70,41 +70,41 @@ Boilerplate Kit.
 
 #### Framework
 
-| Screenshot                                        | Template                                                                             | Screenshot                         | Template                                                                            |
-|:--------------------------------------------------|:-------------------------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------------------------------|
-| ![Starter](docs/screenshots/starter-template.png) | **Starter:** Nothing but the basics: compiled CSS and JavaScript and navbar.         | ![Grid](docs/screenshots/grid.png) | **Grid:** Multiple examples of grid layouts with all four tiers, nesting, and more. |
-| ![Jumbotron](docs/screenshots/jumbotron.png)      | **Jumbotron:** Build around the jumbotron with a navbar and some basic grid columns. |                                    |                                                                                     |
+| Screenshot              | Template                                                                             | Screenshot    | Template                                                                            |
+|:------------------------|:-------------------------------------------------------------------------------------|:--------------|:------------------------------------------------------------------------------------|
+| ![Starter][starter]     | **Starter:** Nothing but the basics: compiled CSS and JavaScript and navbar.         | ![Grid][grid] | **Grid:** Multiple examples of grid layouts with all four tiers, nesting, and more. |
+| ![Jumbotron][jumbotron] | **Jumbotron:** Build around the jumbotron with a navbar and some basic grid columns. |               |                                                                                     |
 
 #### Custom Components
 
-| Screenshot                                                         | Template                                                                                         | Screenshot                                           | Template                                                                                     |
-|:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|:-----------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| ![Album](docs/screenshots/album.png)                               | **Album:** Simple one-page template for photo galleries, portfolios, and more.                   | ![Pricing](docs/screenshots/pricing.png)             | **Pricing:** Example pricing page built with Cards and featuring a custom header and footer. |
-| ![Checkout](docs/screenshots/checkout.png)                         | **Checkout:** Custom checkout form showing our form components and their validation features.    | ![Product](docs/screenshots/product.png)             | **Product:** Lean product-focused marketing page with extensive grid and image work.         |
-| ![Cover](docs/screenshots/cover.png)                               | **Cover:** A one-page template for building simple and beautiful home pages.                     | ![Carousel](docs/screenshots/carousel.png)           | **Carousel:** Customize the navbar and carousel, then add some new components.               |
-| ![Blog](docs/screenshots/blog.png)                                 | **Blog:** Magazine like blog template with header, navigation, featured content.                 | ![Dashboard](docs/screenshots/dashboard.png)         | **Dashboard:** Basic admin dashboard shell with fixed sidebar and navbar.                    |
-| ![Sign-in](docs/screenshots/sign-in.png)                           | **Sign-in:** Custom form layout and design for a simple sign in form.                            | ![Sticky Footer](docs/screenshots/sticky-footer.png) | **Sticky Footer:** Attach a footer to the bottom of the viewport when page content is short. |
-| ![Sticky Footer Navbar](docs/screenshots/sticky-footer-navbar.png) | **Sticky Footer Navbar:** Attach a footer to the bottom of the viewport with a fixed top navbar. |                                                      |                                                                                              |
+| Screenshot                                    | Template                                                                                         | Screenshot                      | Template                                                                                     |
+|:----------------------------------------------|:-------------------------------------------------------------------------------------------------|:--------------------------------|:---------------------------------------------------------------------------------------------|
+| ![Album][Album]                               | **Album:** Simple one-page template for photo galleries, portfolios, and more.                   | ![Pricing][Pricing]             | **Pricing:** Example pricing page built with Cards and featuring a custom header and footer. |
+| ![Checkout][Checkout]                         | **Checkout:** Custom checkout form showing our form components and their validation features.    | ![Product][Product]             | **Product:** Lean product-focused marketing page with extensive grid and image work.         |
+| ![Cover][Cover]                               | **Cover:** A one-page template for building simple and beautiful home pages.                     | ![Carousel][Carousel]           | **Carousel:** Customize the navbar and carousel, then add some new components.               |
+| ![Blog][Blog]                                 | **Blog:** Magazine like blog template with header, navigation, featured content.                 | ![Dashboard][Dashboard]         | **Dashboard:** Basic admin dashboard shell with fixed sidebar and navbar.                    |
+| ![Sign-in][Sign-in]                           | **Sign-in:** Custom form layout and design for a simple sign in form.                            | ![Sticky Footer][Sticky-Footer] | **Sticky Footer:** Attach a footer to the bottom of the viewport when page content is short. |
+| ![Sticky Footer Navbar][Sticky-Footer-Navbar] | **Sticky Footer Navbar:** Attach a footer to the bottom of the viewport with a fixed top navbar. |                                 |                                                                                              |
 
 #### Navbars
 
-| Screenshot                                         | Template                                                                                            | Screenshot                                           | Template                                                                                            |
-|:---------------------------------------------------|:----------------------------------------------------------------------------------------------------|:-----------------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| ![Navbars](docs/screenshots/navbars.png)           | **Navbars:** Demonstration of all responsive and container options for the navbar.                  | ![Navbar Static](docs/screenshots/navbar-static.png) | **Navbar Static:** Single navbar example of a static top navbar along with some additional content. |
-| ![Navbar Fixed](docs/screenshots/navbar-fixed.png) | **Navbar Fixed:** Single navbar example with a fixed top navbar along with some additional content. | ![Navbar Bottom](docs/screenshots/navbar-bottom.png) | **Navbar Bottom:** Single navbar example with a bottom navbar along with some additional content.   |
+| Screenshot                    | Template                                                                                            | Screenshot                      | Template                                                                                            |
+|:------------------------------|:----------------------------------------------------------------------------------------------------|:--------------------------------|:----------------------------------------------------------------------------------------------------|
+| ![Navbars][Navbars]           | **Navbars:** Demonstration of all responsive and container options for the navbar.                  | ![Navbar Static][Navbar-Static] | **Navbar Static:** Single navbar example of a static top navbar along with some additional content. |
+| ![Navbar Fixed][Navbar-Fixed] | **Navbar Fixed:** Single navbar example with a fixed top navbar along with some additional content. | ![Navbar Bottom][Navbar-Bottom] | **Navbar Bottom:** Single navbar example with a bottom navbar along with some additional content.   |
 
 #### Experiments
 
-| Screenshot                                               | Template                                                                             | Screenshot                                   | Template                                                                  |
-|:---------------------------------------------------------|:-------------------------------------------------------------------------------------|:---------------------------------------------|:--------------------------------------------------------------------------|
-| ![Floating Labels](docs/screenshots/floating-labels.png) | **Floating Labels:** Beautifully simple forms with floating labels over your inputs. | ![Offcanvas](docs/screenshots/offcanvas.png) | **Offcanvas:** Turn your expandable navbar into a sliding offcanvas menu. |
+| Screenshot                          | Template                                                                             | Screenshot              | Template                                                                  |
+|:------------------------------------|:-------------------------------------------------------------------------------------|:------------------------|:--------------------------------------------------------------------------|
+| ![Floating Labels][Floating-Labels] | **Floating Labels:** Beautifully simple forms with floating labels over your inputs. | ![Offcanvas][Offcanvas] | **Offcanvas:** Turn your expandable navbar into a sliding offcanvas menu. |
 
 ### Theme Options
 
 The following screenshot outlines the various options available to you when you
 create a _New Project_ within `Espresso`.
 
-![Theme Options](docs/images/theme-options.png)
+![Theme Options][options]
 
 ### Extras
 
@@ -114,7 +114,7 @@ configuration files that form part of most modern-day web projects.
 In the `Theme Options` you will find the following settings for you to choose
 from:
 
-![Theme Options](docs/images/extras.png)
+![Theme Options][extras]
 
 These extras are:
 
@@ -149,10 +149,10 @@ In the HTML markup for each template you will see these meta-tags:
 
 ```html
 <link rel="icon" href="favicon.ico">
-<link rel="manifest" href="manifest.json"> <!-- For Android Devices -->
-<meta name="msapplication-config" content="browserconfig.xml"> <!-- For Windows and Microsoft Mobile -->
-<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- For Apple iOS -->
-<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#563d7c"> <!-- For Safari -->
+<link rel="manifest" href="manifest.json"> <!-- For Android Devices. -->
+<meta name="msapplication-config" content="browserconfig.xml"> <!-- For Windows and Microsoft Mobile. -->
+<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- For Apple iOS. -->
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#563d7c"> <!-- For Safari. -->
 ```
 
 The following breaks down what each of the meta-tags provide.
@@ -212,18 +212,18 @@ documented below.
   (or <kbd>Shift</kbd>+<kbd>Cmd</kbd>+<kbd>N</kbd>)
 - Click `Show Templates Folder`
 
-![show-templates-folder](docs/images/show-templates-folder.png)
+![show-templates-folder][show-folder]
 
 - Copy the extracted folder (called `bootstrap4.espressotemplate`) to the
   `Templates` directory that has just opened up (see below).
 
-![templates-folder](docs/images/templates-folder.png)
+![templates-folder][folder]
 
 The new Boilerplate Template Kit should now be available for you to use in
 the `Espresso` app when you create a _New Project_ (see below for what you
 should be seeing).
 
-![new template](docs/images/new-template.png)
+![new template][new-template]
 
 #### Via Terminal
 
@@ -240,7 +240,7 @@ You can now open up `Espresso.app` and the template will be available to you
 when you click on `File` -> `New Project` or <kbd>Shift</kbd>+<kbd>Cmd</kbd>
 +<kbd>N</kbd>.
 
-![new template](docs/images/new-template.png)
+![new template][new-template]
 
 ## Contributing
 
@@ -313,3 +313,28 @@ Special thanks go out to the following people and projects.
 [robots]: http://www.robotstxt.org/
 [favicon]: https://realfavicongenerator.net/
 [fontawesome]: https://fontawesome.com/
+[new-template]: docs/images/new-template.png
+[folder]: docs/images/templates-folder.png
+[show-folder]: docs/images/show-templates-folder.png
+[options]: docs/images/theme-options.png
+[extras]: docs/images/extras.png
+[starter]: docs/screenshots/starter-template.png
+[grid]: docs/screenshots/grid.png
+[jumbotron]: docs/screenshots/jumbotron.png
+[Album]: docs/screenshots/album.png
+[Pricing]: docs/screenshots/pricing.png
+[Checkout]: docs/screenshots/checkout.png
+[Product]: docs/screenshots/product.png
+[Cover]: docs/screenshots/cover.png
+[Carousel]: docs/screenshots/carousel.png
+[Blog]: docs/screenshots/blog.png
+[Dashboard]: docs/screenshots/dashboard.png
+[Sign-in]: docs/screenshots/sign-in.png
+[Sticky-Footer]: docs/screenshots/sticky-footer.png
+[Sticky-Footer-Navbar]: docs/screenshots/sticky-footer-navbar.png
+[Navbars]: docs/screenshots/navbars.png
+[Navbar-Static]: docs/screenshots/navbar-static.png
+[Navbar-Fixed]: docs/screenshots/navbar-fixed.png
+[Navbar-Bottom]: docs/screenshots/navbar-bottom.png
+[Floating-Labels]: docs/screenshots/floating-labels.png
+[Offcanvas]: docs/screenshots/offcanvas.png
